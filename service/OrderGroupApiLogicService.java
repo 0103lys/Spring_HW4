@@ -17,8 +17,7 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 public class OrderGroupApiLogicService extends BaseService<OrderGroupApiRequest, OrderGroupApiResponse, OrderGroup> {
-    private final OrderGroupApiLogicService orderGroupApiLogicService;
-
+    
     @Override
     public Header<OrderGroupApiResponse> create(Header<OrderGroupApiRequest> request) {
         OrderGroupApiRequest orderGroupApiRequest = request.getData();
